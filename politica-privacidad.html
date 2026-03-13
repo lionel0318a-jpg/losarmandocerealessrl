@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Los Armando Cereales</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        :root {
+            --primary: #1b4332;
+            --secondary: #2d6a4f;
+            --light-green: #52b788;
+            --accent: #d4a24e;
+            --bg-light: #f0f5f1;
+            --bg-white: #ffffff;
+            --text-dark: #1a1a2e;
+            --text-gray: #5a6a5e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--primary);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.8rem;
+            padding: 0.5rem 1.5rem;
+            text-align: center;
+        }
+
+        .top-bar a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* Header */
+        .site-header {
+            background: var(--secondary);
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        }
+
+        .site-header-inner {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-link {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .brand-link svg {
+            width: 34px;
+            height: 34px;
+            color: var(--accent);
+        }
+
+        .brand-link strong {
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        .back-btn {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--accent);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: var(--accent);
+            color: var(--primary);
+        }
+
+        /* Main */
+        .main-wrapper {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .policy-box {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+        }
+
+        .policy-box h1 {
+            font-size: 2.3rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+
+        .date-line {
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--bg-light);
+        }
+
+        .intro-highlight {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(27, 67, 50, 0.04), rgba(82, 183, 136, 0.06));
+            border-radius: 12px;
+            border-left: 4px solid var(--light-green);
+            margin-bottom: 2.5rem;
+            font-size: 1.02rem;
+        }
+
+        .policy-section {
+            margin-bottom: 2rem;
+        }
+
+        .policy-section h2 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 0.7rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .num-badge {
+            background: var(--light-green);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .policy-section p {
+            margin-bottom: 0.7rem;
+            color: var(--text-dark);
+        }
+
+        .policy-section ul {
+            margin: 0.7rem 0 0.7rem 1.5rem;
+        }
+
+        .policy-section ul li {
+            margin-bottom: 0.4rem;
+            color: var(--text-dark);
+        }
+
+        .policy-section ul li::marker {
+            color: var(--light-green);
+        }
+
+        .contact-email {
+            color: var(--secondary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-email:hover {
+            color: var(--accent);
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.8rem;
+            border-radius: 12px;
+            margin-top: 1.2rem;
+        }
+
+        .contact-card h4 {
+            color: var(--accent);
+            font-size: 1.15rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .contact-card p {
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 0.3rem;
+        }
+
+        .consent-note {
+            margin-top: 2rem;
+            padding: 1.3rem;
+            background: rgba(82, 183, 136, 0.08);
+            border: 2px dashed var(--light-green);
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        .page-foot {
+            background: var(--primary);
+            color: rgba(255,255,255,0.5);
+            text-align: center;
+            padding: 1.2rem;
+            font-size: 0.82rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .policy-box {
+                padding: 2rem 1.2rem;
+                border-radius: 12px;
+            }
+            .policy-box h1 {
+                font-size: 1.8rem;
+            }
+            .site-header-inner {
+                flex-direction: column;
+                gap: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="mailto:info@losarmancerealessrl.com">info@losarmancerealessrl.com</a>
+    </div>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="index.html" class="brand-link">
+                <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 45 C25 45 25 20 25 10" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <path d="M25 10 C20 5 12 8 12 15 C12 22 20 22 25 18" fill="currentColor" opacity="0.8"/>
+                    <path d="M25 10 C30 5 38 8 38 15 C38 22 30 22 25 18" fill="currentColor" opacity="0.6"/>
+                    <path d="M25 25 C18 20 10 24 12 32 C14 38 22 36 25 30" fill="currentColor" opacity="0.5"/>
+                    <path d="M25 25 C32 20 40 24 38 32 C36 38 28 36 25 30" fill="currentColor" opacity="0.4"/>
+                </svg>
+                <strong>LOS ARMANDO CEREALES</strong>
+            </a>
+            <a href="index.html" class="back-btn">Volver al inicio</a>
+        </div>
+    </header>
+
+    <main class="main-wrapper">
+        <div class="policy-box">
+            <h1>Política de Privacidad</h1>
+            <p class="date-line">Última revisión: marzo 2025</p>
+
+            <div class="intro-highlight">
+                Los Armando Cereales, empresa agropecuaria con actividad en la Provincia de Buenos Aires, Argentina, asume el compromiso de proteger los datos personales que se recopilan a través de su sitio web y canales de comunicación digital, incluyendo WhatsApp Business API.
+                <br><br>
+                A continuación detallamos cómo gestionamos, protegemos y utilizamos la información personal de quienes interactúan con nosotros.
+            </div>
+
+            <div class="policy-section">
+                <h2><span class="num-badge">1</span> Datos personales recopilados</h2>
+                <p>Cuando se comunica con nosotros, podemos recopilar:</p>
+                <ul>
+                    <li>Nombre y apellido</li>
+                    <li>Número de teléfono celular</li>
+                    <li>Dirección de email</li>
+                    <li>Dirección IP y datos técnicos del navegador</li>
+                    <li>Historial de interacción con nuestros mensajes</li>
+                </ul>
+                <p>Solo recopilamos datos que el usuario nos brinda voluntariamente al contactarnos.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2><span class="num-badge">2</span> Uso de la información</h2>
+                <p>Sus datos serán utilizados exclusivamente para:</p>
+                <ul>
+                    <li>Responder consultas y brindar atención personalizada</li>
+                    <li>Comunicar novedades sobre nuestra actividad y servicios</li>
+                    <li>Gestionar operaciones comerciales del sector agropecuario</li>
+                    <li>Cumplir con requerimientos normativos y legales</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h2><span class="num-badge">3</span> Canal de WhatsApp Business</h2>
+                <p>Utilizamos WhatsApp Business API (servicio de Meta Platforms Inc.) como medio de contacto con productores, clientes y público en general.</p>
+                <p>Esta comunicación se rige también por las políticas de privacidad de Meta. Solo accedemos a los datos necesarios para mantener la comunicación.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2><span class="num-badge">4</span> Seguridad de los datos</h2>
+                <p>Adoptamos medidas razonables de seguridad para proteger su información personal frente a accesos no autorizados, pérdida o alteración.</p>
+                <p>Los datos se conservan únicamente por el tiempo necesario para la finalidad declarada o según lo requiera la legislación vigente.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2><span class="num-badge">5</span> Compartición con terceros</h2>
+                <p>No vendemos, cedemos ni compartimos datos personales con terceros ajenos a nuestra operación, salvo obligación legal o requerimiento judicial.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2><span class="num-badge">6</span> Derechos del titular</h2>
+                <p>Usted puede ejercer en todo momento los siguientes derechos sobre sus datos:</p>
+                <ul>
+                    <li>Acceso: conocer qué datos tenemos sobre usted</li>
+                    <li>Rectificación: corregir datos inexactos o incompletos</li>
+                    <li>Supresión: solicitar la eliminación de sus datos</li>
+                    <li>Oposición: limitar o impedir el tratamiento</li>
+                </ul>
+                <p>Para ejercerlos, contacte a: <a href="mailto:info@losarmancerealessrl.com" class="contact-email">info@losarmancerealessrl.com</a></p>
+            </div>
+
+            <div class="policy-section">
+                <h2><span class="num-badge">7</span> Baja y eliminación de datos</h2>
+                <p>Si desea la eliminación completa de sus datos, envíe un correo a <a href="mailto:info@losarmancerealessrl.com" class="contact-email">info@losarmancerealessrl.com</a> con el asunto "Solicitud de eliminación de datos".</p>
+                <p>Su pedido será atendido en un plazo máximo de 10 días hábiles.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2><span class="num-badge">8</span> Modificaciones</h2>
+                <p>Los Armando Cereales puede actualizar esta política en cualquier momento. Los cambios rigen desde su publicación en el sitio web.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2><span class="num-badge">9</span> Contacto</h2>
+                <p>Para consultas sobre privacidad y protección de datos:</p>
+                <div class="contact-card">
+                    <h4>Los Armando Cereales</h4>
+                    <p><strong>Email:</strong> info@losarmancerealessrl.com</p>
+                    <p><strong>Teléfono:</strong> 11-5862-0701</p>
+                    <p><strong>Dirección:</strong> Guido Spano 34, Junín (CP 6000), Buenos Aires</p>
+                </div>
+            </div>
+
+            <div class="consent-note">
+                Al utilizar nuestros servicios digitales, usted acepta los términos descriptos en esta Política de Privacidad.
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-foot">
+        <p>&copy; 2025 Los Armando Cereales. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
