@@ -312,11 +312,9 @@ h3 {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background:
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800"><rect fill="%231b4332" width="1440" height="800"/><circle cx="200" cy="600" r="300" fill="%232d6a4f" opacity="0.3"/><circle cx="1200" cy="200" r="400" fill="%232d6a4f" opacity="0.2"/></svg>')
-        center/cover no-repeat;
-    background-color: var(--primary);
+    overflow: hidden;
 }
+
 .hero-bg video {
     position: absolute;
     inset: 0;
@@ -328,7 +326,7 @@ h3 {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.30);
+    background: rgba(0,0,0,.15);
 }
 
 .hero-content {
