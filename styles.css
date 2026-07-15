@@ -320,10 +320,7 @@ h3 {
 }
 
 .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.15);
-    z-index: 1;
+    display: none;
 }
 
 .hero-content {
